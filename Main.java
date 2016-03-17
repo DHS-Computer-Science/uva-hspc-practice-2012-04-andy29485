@@ -14,10 +14,14 @@ public class Main {
       System.out.printf("Case %d: ", i+1);
       int nOrder = input.nextInt();
       
-      for(int j=0; j<nOrder+1; j++) {
+      System.out.printf("%d ", nOrder-1);
+      
+      for(int j=0; j<nOrder; j++) {
         System.out.print((nOrder-j)*input.nextInt());
-        if(j < nOrder)
+        if(j < nOrder-1)
           System.out.print(" ");
+        else
+          input.nextInt();
       }
       
       System.out.println();
